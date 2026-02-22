@@ -24,6 +24,6 @@ Web projelerimi (dorukk.dev ve docs.dorukk.dev) Vibe Coded metodolojisi ve yapay
 - **Model Eğitimi:** Sıfırdan mimari oluşturma ve spesifik görevler için Fine-tuning süreçleri.
 
 ## Araç Setim
-- **Diller:** Python, HTML, Markdown
+- **Diller:** Python, HTML
 - **Frameworkler:** PyTorch, Transformers, llama.cpp, Docker
 - **Sistem:** Linux (Ubuntu 22.04), Ollama
