@@ -1,16 +1,15 @@
-## Hi there 👋
+# Selam, ben Doruk!
 
-<!--
-**drkkahraman/drkkahraman** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Hakkımda
+-  Şu anda **TCYZ (Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi)** üzerinde çalışıyorum.
+-  **Ubuntu 22.04 Laptopum** üzerinde local LLM'ler eğitiyorum.
+-  Son zamanlarda **Sıfırdan Yaptığım** modeller 200 ile 400 milyon parametre aralığında oluyor
+-  Amacım en düşük donanımda bile dil modeli yapabilmek ve o dil modelini akıllı saatte bile çalıştırabilmek
 
-Here are some ideas to get you started:
+## 🛠️ Web Sitelerim
+- dorukk.dev (AI ile yapıldı)
+- docs.dorukk.dev (AI ile yapıldı)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Hugging Face
+
+- https://huggingface.co/drkkahraman
