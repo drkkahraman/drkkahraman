@@ -4,7 +4,7 @@
 - **TCYZ (Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi)** kurucusuyum.
 - **Edge AI ve Nano LLM** üzerine uzmanlaşıyorum; amacım yapay zekayı akıllı saatlerden IoT cihazlarına kadar her yere taşımak.
 - **Ubuntu 22.04** ortamında, tamamen yerel donanım kullanarak **1.6M'dan 685M parametreye kadar** değişen özgün modeller geliştiriyorum.
-- **Liderlik:** TED Bodrum Koleji Ortaokul Başkanı olarak, teknoloji vizyonumu sosyal sorumluluk ve liderlik becerilerimle birleştiriyorum.
+- **Liderlik:**  TED Bodrum Koleji Ortaokul Başkanlığında Teknoloji Bölümü Başkanı olarak, teknoloji vizyonumu sosyal sorumluluk ve liderlik becerilerimle birleştiriyorum.
 - **Gelecek Planım:** Şu an hobi ve açık kaynaklı proje olarak yürüttüğüm bu çalışmaları, Temmuz - Ağustos 2026 civarında (LGS sonrası) profesyonel bir girişime dönüştürmeyi hedefliyorum.
 
 ## Projelerim ve Portfolyom
