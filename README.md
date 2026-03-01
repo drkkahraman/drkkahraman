@@ -14,7 +14,9 @@
 - [Hugging Face Profilim](https://huggingface.co/drkkahraman) - Eğittiğim Açık Kaynaklı Modeller (**Çökertme Serisi**)
 - [TCYZ Ollama'da!](https://ollama.com/tcyz) - Yayınladığım yerel modeller
 - [TEDcepte](https://tedcepte.dorukk.dev) - Okulum tarafından desteklenmekte ve kullanılmakta olan öğrenci sosyal medyası
-- NotDeposu - Öğrenci meclisi kapsamında geliştirilen ders çalışma notlarının olduğu web sitesi.
+<img width="1900" height="846" alt="Screenshot from 2026-03-01 13-20-21" src="https://github.com/user-attachments/assets/0ece1a78-ed5d-468a-ada3-2e7cf3ad310b" />
+- NotDeposu
+ Öğrenci meclisi kapsamında geliştirilen ders çalışma notlarının olduğu web sitesi.
 <img width="400" height="200" alt="Screenshot from 2026-03-01 13-08-55" src="https://github.com/user-attachments/assets/cdb49af9-8127-46a3-8a00-212c349ce18c" />
 
 ### Geliştirme Notu
