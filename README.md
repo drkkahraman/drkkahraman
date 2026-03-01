@@ -10,8 +10,14 @@
 ## Projelerim ve Portfolyom
 
 - [dorukk.dev](https://dorukk.dev) - Kişisel Geliştirici Portfolyosu
+<img width="400" height="200" alt="Screenshot from 2026-03-01 13-24-53" src="https://github.com/user-attachments/assets/c2174fc7-abff-45b0-b205-d11573e921b5" />
+
 - [docs.dorukk.dev](https://docs.dorukk.dev) - Teknik Dökümantasyon ve Proje Rehberleri
+<img width="400" height="200" alt="Screenshot from 2026-03-01 13-26-01" src="https://github.com/user-attachments/assets/21d1db59-fe21-4eab-bbb1-9357248adf03" />
+
 - [Hugging Face Profilim](https://huggingface.co/drkkahraman) - Eğittiğim Açık Kaynaklı Modeller (**Çökertme Serisi**)
+<img width="400" height="200" alt="Screenshot from 2026-03-01 13-28-47" src="https://github.com/user-attachments/assets/73eb0304-f651-4212-afea-78425a7653f8" />
+ 
 - [TCYZ Ollama'da!](https://ollama.com/tcyz) - Yayınladığım yerel modeller
 <img width="400" height="200" alt="Screenshot from 2026-03-01 13-22-07" src="https://github.com/user-attachments/assets/b487c6f3-655a-4b73-91fd-0a93454518c2" />
 
