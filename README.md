@@ -12,7 +12,7 @@
 - [docs.dorukk.dev](https://docs.dorukk.dev) - Teknik Dökümantasyon ve Proje Rehberleri
 - [Hugging Face Profilim](https://huggingface.co/drkkahraman) - Eğittiğim Açık Kaynaklı Modeller (**Çökertme Serisi**)
 - [TCYZ Ollama'da!](https://ollama.com/tcyz) - Yayınladığım yerel modeller
-- [TEDcepte](https://tedcepte.dorukk.dev) - okulum tarafından desteklenmekte ve kullanılmakta olan öğrenci sosyal medyası
+- [TEDcepte](https://tedcepte.dorukk.dev) - Okulum tarafından desteklenmekte ve kullanılmakta olan öğrenci sosyal medyası
 
 ### Geliştirme Notu
 Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve yapay zeka yardımıyla geliştirdim. Buradaki asıl amacım:
