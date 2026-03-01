@@ -37,7 +37,6 @@ Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve y
 ## Teknik Uzmanlık Alanlarım
 - **Model Optimizasyonu:** Düşük kaynaklı cihazlar (**Raspberry Pi 4, Intel Iris Xe**) için Ollama Quantization süreçleri.
 - **SLM (Small Language Models):** Kısıtlı parametre sayılarıyla yüksek verim alma stratejileri ve mimari tasarım.
-- **Inference Performansı:** llama.cpp ve Ollama gibi C++ tabanlı motorlar üzerinde yüksek verimli model dağıtımı.
 - **Güvenli Depolama:** Modelleri modern ve güvenli **Safetensors** formatında yayınlama.
 - **Model Eğitimi:** PyTorch kullanarak sıfırdan mimari oluşturma ve spesifik görevler için Fine-tuning süreçleri.
 
