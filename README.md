@@ -7,7 +7,11 @@
 - **Liderlik:**  TED Bodrum Koleji Ortaokul Öğrenci Meclisi Teknoloji Bölümü Başkanı olarak, teknoloji vizyonumu sosyal sorumluluk ve liderlik becerilerimle birleştiriyorum.
 - **Gelecek Planım:** Şu an hobi ve açık kaynaklı proje olarak yürüttüğüm bu çalışmaları, Temmuz - Ağustos 2026 civarında (LGS sonrası) profesyonel bir girişime dönüştürmeyi hedefliyorum.
 
+NotDeposu UI:
+<img width="1899" height="840" alt="Screenshot from 2026-03-01 13-08-55" src="https://github.com/user-attachments/assets/cdb49af9-8127-46a3-8a00-212c349ce18c" />
+
 ## Projelerim ve Portfolyom
+
 - [dorukk.dev](https://dorukk.dev) - Kişisel Geliştirici Portfolyosu
 - [docs.dorukk.dev](https://docs.dorukk.dev) - Teknik Dökümantasyon ve Proje Rehberleri
 - [Hugging Face Profilim](https://huggingface.co/drkkahraman) - Eğittiğim Açık Kaynaklı Modeller (**Çökertme Serisi**)
