@@ -7,9 +7,6 @@
 - **Liderlik:**  TED Bodrum Koleji Ortaokul Öğrenci Meclisi Teknoloji Bölümü Başkanı olarak, teknoloji vizyonumu sosyal sorumluluk ve liderlik becerilerimle birleştiriyorum.
 - **Gelecek Planım:** Şu an hobi ve açık kaynaklı proje olarak yürüttüğüm bu çalışmaları, Temmuz - Ağustos 2026 civarında (LGS sonrası) profesyonel bir girişime dönüştürmeyi hedefliyorum.
 
-NotDeposu UI:
-<img width="1899" height="840" alt="Screenshot from 2026-03-01 13-08-55" src="https://github.com/user-attachments/assets/cdb49af9-8127-46a3-8a00-212c349ce18c" />
-
 ## Projelerim ve Portfolyom
 
 - [dorukk.dev](https://dorukk.dev) - Kişisel Geliştirici Portfolyosu
@@ -18,6 +15,9 @@ NotDeposu UI:
 - [TCYZ Ollama'da!](https://ollama.com/tcyz) - Yayınladığım yerel modeller
 - [TEDcepte](https://tedcepte.dorukk.dev) - Okulum tarafından desteklenmekte ve kullanılmakta olan öğrenci sosyal medyası
 - NotDeposu - Öğrenci meclisi kapsamında geliştirilen ders çalışma notlarının olduğu web sitesi.
+
+NotDeposu UI:
+<img width="1899" height="840" alt="Screenshot from 2026-03-01 13-08-55" src="https://github.com/user-attachments/assets/cdb49af9-8127-46a3-8a00-212c349ce18c" />
 
 ### Geliştirme Notu
 Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve yapay zeka yardımıyla geliştirdim. Buradaki asıl amacım:
