@@ -13,6 +13,7 @@
 - [Hugging Face Profilim](https://huggingface.co/drkkahraman) - Eğittiğim Açık Kaynaklı Modeller (**Çökertme Serisi**)
 - [TCYZ Ollama'da!](https://ollama.com/tcyz) - Yayınladığım yerel modeller
 - [TEDcepte](https://tedcepte.dorukk.dev) - Okulum tarafından desteklenmekte ve kullanılmakta olan öğrenci sosyal medyası
+- NotDeposu - Öğrenci meclisi kapsamında geliştirilen ders çalışma notlarının olduğu web sitesi.
 
 ### Geliştirme Notu
 Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve yapay zeka yardımıyla geliştirdim. Buradaki asıl amacım:
