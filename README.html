@@ -3,232 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doruk | Edge AI & Nano LLM</title>
+    <title>Doruk | Edge AI & Nano LLM Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* Genel sayfa stili ve font ayarları */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
+            background-color: #fafafa;
             color: #111827;
             scroll-behavior: smooth;
         }
         .mono {
             font-family: 'JetBrains Mono', monospace;
         }
-        /* Bento kartların ortak özellikleri */
         .bento-card {
             background: #ffffff;
             border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            transition: all 0.2s ease;
-            height: 100%;
+            border-radius: 16px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
         }
         .bento-card:hover {
             border-color: #3b82f6;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes subtle-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        .animate-pulse-subtle {
+            animation: subtle-pulse 3s infinite ease-in-out;
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Atatürk Sözü -->
-    <div class="bg-gray-50 border-b border-gray-100 py-3">
+    <!-- Üst Bilgi / Quote -->
+    <div class="bg-white border-b border-gray-100 py-3">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-xs md:text-sm font-medium text-gray-500 italic">
+            <p class="text-[10px] md:text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase">
                 "Manevi mirasım bilim ve akıldır." — Mustafa Kemal Atatürk
             </p>
         </div>
     </div>
 
-    <!-- Navigasyon -->
-    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="font-bold text-xl tracking-tighter uppercase">DORUK<span class="text-blue-600">.</span></div>
-        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
-            <a href="#about" class="hover:text-black transition-colors">Kimim?</a>
-            <a href="#projects" class="hover:text-black transition-colors">İşlerim</a>
-            <a href="#details" class="hover:text-black transition-colors">Detaylar</a>
-            <a href="mailto:contact@dorukk.dev" class="text-blue-600 font-semibold">İletişim</a>
+    <!-- Navigasyon (Sadeleştirilmiş) -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-bold text-xl tracking-tighter flex items-center gap-1">
+                DORUK<span class="text-blue-600">.</span>DEV
+            </div>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 pb-24">
+    <main class="max-w-6xl mx-auto px-6 pt-12 pb-24">
         
-        <!-- Giriş Bölümü -->
-        <section class="py-16 md:py-24 max-w-4xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-[11px] font-bold text-blue-600 uppercase tracking-widest mb-6">
-                Edge AI & Nano LLM
-            </div>
+        <!-- Hero Section -->
+        <section id="about" class="py-16 md:py-24 max-w-4xl">
+            <!-- Rozet kullanıcı isteği üzerine kaldırıldı -->
             
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
-                Zekayı Geliştiriyor, <br>
-                <span class="text-blue-600">Sınırları Gösteriyorum.</span>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.05]">
+                Yerel Zekayı <br>
+                <span class="gradient-text">Her Cihaza Taşıyorum.</span>
             </h1>
-            <p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                Düşük donanımlı cihazlarda çalışan yapay zeka modelleri inşa ediyorum. Her projem, yerel olarak çalışan zekayı temsil eden birer örnektir.
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mb-8">
+                TCYZ kurucusu olarak, Ubuntu ortamında 1.6M'dan 685M parametreye kadar özgün modeller eğitiyorum.
             </p>
+            <div class="flex flex-wrap gap-4">
+                <div class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium border border-gray-200">TED Bodrum Koleji Teknoloji Bşk.</div>
+                <div class="px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium border border-gray-200">8. Sınıf Disiplini</div>
+            </div>
         </section>
 
-        <!-- Ana İşler (Bento Grid) -->
+        <!-- Bento Grid -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6" id="projects">
             
-            <!-- TCYZ Kartı -->
-            <div class="md:col-span-8 bento-card p-8 flex flex-col justify-between overflow-hidden relative">
-                <div class="z-10">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Geliştirme</span>
-                    <h2 class="text-3xl font-bold mt-2 mb-4">TCYZ</h2>
-                    <p class="text-gray-600 max-w-md text-lg leading-relaxed">Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi. Yerli ekosistem için özgün model mimarileri tasarlıyorum.</p>
+            <!-- TCYZ Ana Proje -->
+            <div class="md:col-span-8 bento-card p-8 bg-slate-900 text-white relative group">
+                <div class="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div class="relative z-10 flex flex-col h-full justify-between">
+                    <div>
+                        <span class="text-[10px] font-bold text-blue-400 uppercase tracking-widest">Amiral Gemisi</span>
+                        <h2 class="text-4xl font-bold mt-2 mb-4 italic tracking-tighter">TCYZ</h2>
+                        <p class="text-slate-300 max-w-md text-lg leading-relaxed">
+                            Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi. Tamamen yerel donanımla eğitilen, dışa bağımlılığı olmayan SLM (Small Language Models) ekosistemi.
+                        </p>
+                    </div>
+                    <div class="mt-8 flex gap-4">
+                        <a href="https://ollama.com/tcyz" target="_blank" class="px-5 py-2 bg-white text-black rounded-xl text-sm font-bold hover:bg-blue-50 transition-colors">Modelleri İncele</a>
+                        <a href="https://docs.dorukk.dev" target="_blank" class="px-5 py-2 bg-slate-800 text-white border border-slate-700 rounded-xl text-sm font-bold hover:bg-slate-700">Dökümantasyon</a>
+                    </div>
                 </div>
-                <div class="mt-8 flex gap-3 z-10">
-                    <span class="px-3 py-1 bg-gray-100 rounded-full text-[11px] font-bold uppercase text-gray-600 tracking-wider">Milli Zeka</span>
-                    <span class="px-3 py-1 bg-gray-100 rounded-full text-[11px] font-bold uppercase text-gray-600 tracking-wider">Açık Kaynak</span>
-                </div>
-                <div class="absolute right-[-20px] bottom-[-20px] opacity-10 text-[120px] font-bold select-none uppercase tracking-tighter">AI</div>
+                <div class="absolute right-[-40px] bottom-[-40px] opacity-10 text-[180px] font-bold select-none mono italic tracking-tighter">AI</div>
             </div>
 
-            <!-- Parametre Kartı -->
-            <div class="md:col-span-4 bento-card p-8 bg-blue-600 text-white border-none">
-                <h3 class="text-sm font-medium opacity-80 uppercase tracking-wider">Model Ölçeği</h3>
-                <div class="mt-8">
-                    <span class="text-6xl font-bold tracking-tighter">685M</span>
-                    <p class="mt-4 opacity-90 text-sm leading-relaxed">Küçük parametre sayılarıyla yüksek verim alma stratejileri üzerine çalışıyorum.</p>
+            <!-- Model Ölçeği -->
+            <div class="md:col-span-4 bento-card p-8 bg-blue-600 text-white flex flex-col justify-center text-center">
+                <h3 class="text-xs font-bold opacity-80 uppercase tracking-wider mb-4">Model Parametre Aralığı</h3>
+                <div class="space-y-1">
+                    <span class="text-2xl font-light opacity-60 block">1.6M</span>
+                    <span class="text-7xl font-bold tracking-tighter block">685M</span>
                 </div>
+                <p class="mt-6 opacity-90 text-sm italic">
+                    "Küçük parametrelerle yüksek verim."
+                </p>
             </div>
 
-            <!-- Hugging Face Kartı -->
-            <div class="md:col-span-6 bento-card p-8 flex flex-col justify-between">
-                <div>
+            <!-- Hugging Face - Çökertme -->
+            <div class="md:col-span-6 bento-card p-0 flex flex-col">
+                <div class="p-8">
                     <div class="flex items-center gap-2 mb-4">
-                        <span class="p-2 bg-yellow-50 rounded-lg">🤗</span>
+                        <span class="text-2xl">🤗</span>
                         <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest">Hugging Face</span>
                     </div>
-                    <h2 class="text-2xl font-bold mb-4">Çökertme Serisi</h2>
-                    <p class="text-gray-500 leading-relaxed text-sm">Eğittiğim tüm modelleri Hugging Face üzerinden yayınlıyorum. Güvenli Safetensors formatında modeller sunuyorum.</p>
+                    <h2 class="text-2xl font-bold mb-2">Çökertme Serisi</h2>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Özgün mimarilerle eğitilen açık kaynaklı modeller. Safetensors formatında güvenli ve optimize edilmiş dağıtım.
+                    </p>
+                    <a href="https://huggingface.co/drkkahraman" target="_blank" class="text-sm font-bold text-blue-600 hover:underline">Hugging Face Profilini Gör →</a>
                 </div>
-                <a href="https://huggingface.co/drkkahraman" target="_blank" class="mt-6 text-sm font-bold text-blue-600 hover:underline">Hugging Face Profilim →</a>
-            </div>
-
-            <!-- Ollama Kartı -->
-            <div class="md:col-span-6 bento-card p-8 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="p-2 bg-slate-50 rounded-lg">:D</span>
-                        <span class="text-xs font-bold text-slate-600 uppercase tracking-widest">Yerel Dağıtım</span>
+                <div class="mt-auto border-t border-gray-100 bg-gray-50 p-4">
+                    <div class="flex justify-between items-center text-[10px] font-mono text-gray-400">
+                        <span>LATEST: COKERTME-V2</span>
+                        <span>FORMAT: SAFETENSORS</span>
                     </div>
-                    <h2 class="text-2xl font-bold mb-4">Ollama Entegrasyonu</h2>
-                    <p class="text-gray-500 leading-relaxed text-sm">Modellerimi Ollama kütüphanesine uygun hale getirerek, herkesin kendi cihazında yapay zeka çalıştırmasını sağlıyorum.</p>
                 </div>
-                <a href="https://ollama.com/tcyz" target="_blank" class="mt-6 text-sm font-bold text-blue-600 hover:underline">Ollama Sayfası →</a>
             </div>
 
-            <!-- Optimizasyon Kartı -->
-            <div class="md:col-span-4 bento-card p-6">
-                <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                </div>
-                <h4 class="font-bold mb-2 uppercase text-xs tracking-wider">Optimizasyon</h4>
-                <p class="text-sm text-gray-500 leading-relaxed">Raspberry Pi ve Iris Xe gibi donanımlar için modelleri yüksek performansa göre sıkıştırıyorum.</p>
-            </div>
-
-            <!-- AI Gösterim Kartı -->
-            <div class="md:col-span-4 bento-card p-6 border-blue-100 bg-blue-50/20">
-                <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                </div>
-                <h4 class="font-bold mb-2 text-blue-700 uppercase text-xs tracking-wider">AI ile Yapıldı</h4>
-                <p class="text-sm text-blue-600/70 leading-relaxed italic">Bu portfolyo yapay zeka ile tasarlandı. Amacım zekanın her alandaki başarısını göstermek.</p>
-            </div>
-
-            <!-- 2026 Şirket Hedefi Kartı (Animasyon Geri Geldi) -->
-            <div class="md:col-span-12 bento-card p-8 flex flex-col md:flex-row items-center justify-between gap-8 bg-slate-900 text-white border-none">
+            <!-- TEDcepte & NotDeposu -->
+            <div class="md:col-span-6 bento-card p-8 flex flex-col justify-between border-blue-50 bg-blue-50/10">
                 <div>
-                    <h3 class="text-2xl font-bold mb-2">2026 Şirket Hedefi</h3>
-                    <p class="text-slate-400 max-w-xl text-lg leading-relaxed">LGS sonrası bu projeleri profesyonel bir teknoloji şirketine dönüştürmeyi hedefliyorum.</p>
+                    <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Sosyal Sorumluluk & Okul</span>
+                    <h2 class="text-2xl font-bold mt-2 mb-4">Öğrenci Ekosistemi</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-white border border-blue-100 rounded-lg flex items-center justify-center shrink-0">📱</div>
+                            <div>
+                                <h4 class="font-bold text-sm">TEDcepte</h4>
+                                <p class="text-xs text-gray-500">Okulun resmi olmayan ama en çok kullanılan öğrenci sosyal medyası.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 bg-white border border-blue-100 rounded-lg flex items-center justify-center shrink-0">📚</div>
+                            <div>
+                                <h4 class="font-bold text-sm">NotDeposu</h4>
+                                <p class="text-xs text-gray-500">Meclis kapsamında geliştirilen merkezi ders notları platformu.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-center gap-6">
+                <a href="https://tedcepte.dorukk.dev" target="_blank" class="mt-6 inline-block text-sm font-bold text-blue-600 hover:underline">Platformları İncele →</a>
+            </div>
+
+            <!-- Vibe Coded Metodolojisi -->
+            <div class="md:col-span-5 bento-card p-8">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600">✨</span>
+                    <h3 class="font-bold text-sm uppercase tracking-wider">Vibe Coded Dev</h3>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed">
+                    Web projelerimi zaman tasarrufu sağlamak için <strong>Vibe Coded</strong> metodolojisiyle geliştiriyorum. Bu sayede odağımı tamamen yapay zeka mimarilerine ve model eğitimine verebiliyorum.
+                </p>
+                <div class="mt-4 flex gap-2">
+                    <span class="px-2 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold rounded">Hız</span>
+                    <span class="px-2 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold rounded">AI Destekli</span>
+                    <span class="px-2 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold rounded">Verimlilik</span>
+                </div>
+            </div>
+
+            <!-- Teknik Stack -->
+            <div class="md:col-span-7 bento-card p-8 bg-gray-50">
+                <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Kullandığım Araç Seti</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <span class="block font-bold text-lg">Python</span>
+                        <span class="text-[9px] font-mono text-blue-600 uppercase">Architecture</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block font-bold text-lg">PyTorch</span>
+                        <span class="text-[9px] font-mono text-blue-600 uppercase">Training</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block font-bold text-lg">Ollama</span>
+                        <span class="text-[9px] font-mono text-blue-600 uppercase">Quantization</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block font-bold text-lg">Ubuntu</span>
+                        <span class="text-[9px] font-mono text-blue-600 uppercase">Environment</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2026 Geri Sayım -->
+            <div class="md:col-span-12 bento-card p-10 bg-gradient-to-r from-blue-700 to-indigo-800 text-white border-none flex flex-col md:flex-row items-center justify-between gap-10 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold mb-3">LGS Sonrası: Profesyonel Girişim</h3>
+                    <p class="text-blue-100 max-w-xl text-lg leading-relaxed">
+                        Şu an açık kaynaklı bir hobi olan TCYZ ve Edge AI çalışmalarımı, Temmuz - Ağustos 2026 döneminde profesyonel bir teknoloji startup'ına dönüştürüyorum.
+                    </p>
+                </div>
+                <div class="flex items-center gap-8 relative z-10">
                     <div class="text-right">
-                        <span class="block font-bold text-2xl uppercase tracking-tighter">TEMMUZ 2026</span>
-                        <span class="text-xs text-blue-400 font-bold tracking-widest uppercase">Geri Sayım Başladı</span>
+                        <span class="block font-bold text-3xl tracking-tighter uppercase">TEMMUZ 2026</span>
+                        <span class="text-xs text-blue-200 font-bold tracking-widest uppercase animate-pulse-subtle">Sistem Hazırlanıyor...</span>
                     </div>
-                    <!-- Meşhur Dönen Halka Animasyonu -->
-                    <div class="w-14 h-14 rounded-full border-[3px] border-blue-500 border-t-transparent animate-spin"></div>
+                    <div class="relative flex items-center justify-center">
+                        <div class="w-20 h-20 rounded-full border-[4px] border-blue-400/30 border-t-white animate-spin"></div>
+                        <span class="absolute text-[10px] font-bold">READY</span>
+                    </div>
+                </div>
+                <div class="absolute left-0 top-0 w-full h-full opacity-10 pointer-events-none">
+                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
                 </div>
             </div>
         </div>
 
-        <!-- Detaylı Bilgi Bölümü -->
-        <section class="mt-32 border-t border-gray-100 pt-16" id="details">
+        <!-- Detaylı Yol Haritası -->
+        <section class="mt-32 border-t border-gray-100 pt-16">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <div class="space-y-6">
-                    <h3 class="text-3xl font-bold tracking-tight">Neden Edge AI?</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Bulut tabanlı devasa modeller yerine, bileğimizde taşıyabileceğimiz <strong>Nano LLM</strong> mimarilerine inanıyorum. İnternet gerektirmeyen, gizli ve az enerji tüketen zeka; teknolojinin geleceğidir.
+                <div>
+                    <h3 class="text-3xl font-bold tracking-tight mb-6">Neden Edge AI?</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Bulut tabanlı devasa modeller yerine, internet gerektirmeyen, gizliliği ön planda tutan ve <strong>akıllı saatlerden Intel Iris Xe</strong> GPU'lara kadar her donanımda akıcı çalışan <strong>Nano LLM</strong>'lerin geleceğine odaklanıyorum.
                     </p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Ubuntu 22.04 üzerinde, tamamen yerel donanımla modelleri eğitiyorum. Amacım, her cihazın kendi başına düşünebilmesini sağlamak.
+                    <div class="p-6 bg-white border border-gray-100 rounded-2xl">
+                        <h4 class="font-bold text-sm mb-4 uppercase tracking-wider text-blue-600">Optimizasyon Odağı</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-gray-700 italic">
+                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                                Raspberry Pi 4 için düşük gecikmeli çıkarım
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700 italic">
+                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                                Intel Iris Xe donanımında yerel model eğitimi
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold tracking-tight mb-6">Teknik Yolculuk</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        8. sınıftaki ders disiplini ile yapay zekaya olan teknik tutkumu birleştiriyorum. TED Bodrum Koleji'ndeki liderlik rolümle, bu vizyonu sosyal faydaya dönüştürüyorum.
                     </p>
-                </div>
-                <div class="space-y-6">
-                    <h3 class="text-3xl font-bold tracking-tight">Teknik Yolculuğum</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        8. sınıftaki disiplini yapay zekaya olan tutkumla birleştiriyorum. TED Bodrum Koleji Teknoloji Liderliği görevimle, bu vizyonun sosyal tarafını da yönetiyorum.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-sm font-medium text-gray-700">
-                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                            Safetensors formatında güvenli model depolama
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-medium text-gray-700">
-                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                            PyTorch ile sıfırdan mimari tasarımı
-                        </li>
-                        <li class="flex items-center gap-3 text-sm font-medium text-gray-700">
-                            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                            Ollama Quantization ile modelleri hafifletme
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Teknik Ekosistem Şeridi -->
-        <section class="mt-32 text-center" id="technical">
-            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-12">Teknik Ekosistem</h3>
-            <div class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-60">
-                <div class="text-center">
-                    <span class="font-bold text-lg block uppercase">Ubuntu</span>
-                    <span class="text-[10px] font-mono text-blue-600 uppercase">OS</span>
-                </div>
-                <div class="text-center">
-                    <span class="font-bold text-lg block uppercase">PyTorch</span>
-                    <span class="text-[10px] font-mono text-blue-600 uppercase">Engine</span>
-                </div>
-                <div class="text-center">
-                    <span class="font-bold text-lg block uppercase">Python</span>
-                    <span class="text-[10px] font-mono text-blue-600 uppercase">Core</span>
-                </div>
-                <div class="text-center">
-                    <span class="font-bold text-lg block uppercase">Ollama</span>
-                    <span class="text-[10px] font-mono text-blue-600 uppercase">Runtime</span>
+                    <div class="grid grid-cols-1 gap-4 text-sm font-medium">
+                        <div class="p-4 border border-gray-100 rounded-xl hover:bg-white transition-colors">
+                            <span class="text-blue-600 block mb-1">Mimariler</span>
+                            Sıfırdan PyTorch ile özgün SLM tasarımları.
+                        </div>
+                        <div class="p-4 border border-gray-100 rounded-xl hover:bg-white transition-colors">
+                            <span class="text-blue-600 block mb-1">Format</span>
+                            Safetensors ile güvenli ve hızlı model transferi.
+                        </div>
+                        <!-- Runtime Kartı kullanıcı isteği üzerine kaldırıldı -->
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- Alt Bilgi -->
-    <footer class="bg-gray-50 border-t border-gray-200 py-12">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-sm text-gray-500 italic">
-                "Zekayı anlamak için onu inşa etmelisiniz."
-            </p>
-            <div class="flex gap-8 text-sm font-medium">
-                <a href="https://docs.dorukk.dev" target="_blank" class="hover:text-blue-600 transition-colors">Rehberler</a>
-                <a href="https://huggingface.co/drkkahraman" target="_blank" class="hover:text-blue-600 transition-colors">Hugging Face</a>
-                <a href="https://ollama.com/tcyz" target="_blank" class="hover:text-blue-600 transition-colors">Ollama</a>
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div>
+                    <div class="font-bold text-2xl tracking-tighter mb-4">DORUK<span class="text-blue-600">.</span></div>
+                    <p class="text-gray-400 text-sm max-w-xs leading-relaxed italic">
+                        "Zekayı anlamak için onu sıfırdan inşa etmelisiniz."
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
+                    <div class="space-y-4">
+                        <h5 class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Ekosistem</h5>
+                        <ul class="text-sm space-y-2 font-medium">
+                            <li><a href="https://dorukk.dev" class="hover:text-blue-600 transition-colors">Portfolyo</a></li>
+                            <li><a href="https://docs.dorukk.dev" class="hover:text-blue-600 transition-colors">Dökümanlar</a></li>
+                            <li><a href="https://ollama.com/tcyz" class="hover:text-blue-600 transition-colors">Ollama</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Modeller</h5>
+                        <ul class="text-sm space-y-2 font-medium">
+                            <li><a href="https://huggingface.co/drkkahraman" class="hover:text-blue-600 transition-colors">Hugging Face</a></li>
+                            <li><a href="#" class="hover:text-blue-600 transition-colors">Çökertme V2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[10px] text-gray-400 font-mono uppercase tracking-widest">© 2026 Doruk - TCYZ Projesi</p>
+                <div class="flex gap-6">
+                    <span class="text-[10px] font-bold text-green-500 flex items-center gap-1 uppercase tracking-tighter">
+                        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span> SYSTEM ONLINE
+                    </span>
+                </div>
             </div>
         </div>
     </footer>
