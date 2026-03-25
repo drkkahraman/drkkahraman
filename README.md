@@ -1,4 +1,4 @@
-# Selam, ben Doruk!
+# Merhaba! Ben Doruk.
 
 ## Hakkımda ve Vizyonum
 - **TCYZ (Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi)** kurucusuyum.
