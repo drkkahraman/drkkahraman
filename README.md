@@ -1,6 +1,6 @@
 # Merhaba! Ben Doruk.
 
-## Hakkımda ve Vizyonum
+## Ben kimim?
 - **TCYZ (Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi)** kurucusuyum.
 - **Edge AI ve Nano LLM** üzerine uzmanlaşıyorum; amacım yapay zekayı akıllı saatlerden IoT cihazlarına kadar her yere taşımak.
 - **Ubuntu 22.04** ortamında, tamamen yerel donanım kullanarak **1.6M'dan 685M parametreye kadar** değişen özgün modeller geliştiriyorum.
