@@ -28,6 +28,7 @@
  Öğrenci meclisi kapsamında geliştirilen ders çalışma notlarının olduğu web sitesi.
 <img width="400" height="200" alt="Screenshot from 2026-03-01 13-08-55" src="https://github.com/user-attachments/assets/cdb49af9-8127-46a3-8a00-212c349ce18c" />
 
+[play.dorukk.dev](https://play.dorukk.dev) - Kendi yaptığım pixel oyunum!
 
 ### Geliştirme Notu
 Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve yapay zeka yardımıyla geliştirdim. Buradaki asıl amacım:
