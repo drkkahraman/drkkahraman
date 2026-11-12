@@ -4,7 +4,7 @@
 - **TCYZ (Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi)** kurucusuyum.
 - **Edge AI ve Nano LLM** üzerine uzmanlaşıyorum; amacım yapay zekayı akıllı saatlerden IoT cihazlarına kadar her yere taşımak.
 - **Ubuntu 22.04** ortamında, tamamen yerel donanım kullanarak **1.6M'dan 685M parametreye kadar** değişen özgün modeller geliştiriyorum.
-- **Liderlik:**  TED Bodrum Koleji Ortaokul Öğrenci Meclisi Teknoloji Bölümü Başkanı olarak, teknoloji vizyonumu sosyal sorumluluk ve liderlik becerilerimle birleştiriyorum.
+- **OKULUM:** Bahçeşehir Koleji 50. Yıl Fen ve Teknoloji Lisesi.
 - **Gelecek Planım:** Şu an hobi ve açık kaynaklı proje olarak yürüttüğüm bu çalışmaları, Temmuz - Ağustos 2026 civarında (LGS sonrası) profesyonel bir girişime dönüştürmeyi hedefliyorum.
 
 ## Projelerim ve Portfolyom
@@ -20,13 +20,6 @@
  
 - [TCYZ Ollama'da!](https://ollama.com/tcyz) - Yayınladığım yerel modeller
 <img width="400" height="200" alt="Screenshot from 2026-03-01 13-22-07" src="https://github.com/user-attachments/assets/b487c6f3-655a-4b73-91fd-0a93454518c2" />
-
-- [TEDcepte](https://tedcepte.dorukk.dev) - Okulum tarafından desteklenmekte ve kullanılmakta olan öğrenci sosyal medyası
-<img width="400" height="200" alt="Screenshot from 2026-03-01 13-20-21" src="https://github.com/user-attachments/assets/0ece1a78-ed5d-468a-ada3-2e7cf3ad310b" />
-
-- NotDeposu
- Öğrenci meclisi kapsamında geliştirilen ders çalışma notlarının olduğu web sitesi.
-<img width="400" height="200" alt="Screenshot from 2026-03-01 13-08-55" src="https://github.com/user-attachments/assets/cdb49af9-8127-46a3-8a00-212c349ce18c" />
 
 [play.dorukk.dev](https://play.dorukk.dev) - Kendi yaptığım pixel oyunum!
 
