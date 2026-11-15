@@ -2,11 +2,8 @@
 
 ## Ben kimim?
 - **TCYZ (Türkiye Cumhuriyeti Açık Kaynaklı Yapay Zeka Projesi)** kurucusuyum.
-- **Edge AI ve Nano LLM** üzerine uzmanlaşıyorum; amacım yapay zekayı akıllı saatlerden IoT cihazlarına kadar her yere taşımak.
-- **Ubuntu 22.04** ortamında, tamamen yerel donanım kullanarak **1.6M'dan 685M parametreye kadar** değişen özgün modeller geliştiriyorum.
+- **Arch** ortamında, tamamen yerel donanım kullanarak **1.6M'dan 12B parametreye kadar** değişen özgün modeller geliştiriyorum.
 - **OKULUM:** Bahçeşehir Koleji 50. Yıl Fen ve Teknoloji Lisesi.
-- **Gelecek Planım:** Şu an hobi ve açık kaynaklı proje olarak yürüttüğüm bu çalışmaları, Temmuz - Ağustos 2026 civarında (LGS sonrası) profesyonel bir girişime dönüştürmeyi hedefliyorum.
-
 ## Projelerim ve Portfolyom
 
 - [dorukk.dev](https://dorukk.dev) - Kişisel Geliştirici Portfolyosu
@@ -29,7 +26,7 @@ Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve y
 2. Modern yapay zeka araçlarının yazılım geliştirme süreçlerindeki sınırlarını ve potansiyelini bizzat deneyimleyerek öğrenmek.
 
 ## Teknik Uzmanlık Alanlarım
-- **Model Optimizasyonu:** Düşük kaynaklı cihazlar (**Raspberry Pi 4, Intel Iris Xe**) için Ollama Quantization süreçleri.
+- **Model Optimizasyonu:** Düşük kaynaklı cihazlar (**Raspberry Pi 4, Intel Iris Xe, RTX 5090**) için Ollama Quantization süreçleri.
 - **SLM (Small Language Models):** Kısıtlı parametre sayılarıyla yüksek verim alma stratejileri ve mimari tasarım.
 - **Güvenli Depolama:** Modelleri modern ve güvenli **Safetensors** formatında yayınlama.
 - **Model Eğitimi:** PyTorch kullanarak sıfırdan mimari oluşturma ve spesifik görevler için Fine-tuning süreçleri.
@@ -37,7 +34,7 @@ Web projelerimi (dorukk.dev ve docs.dorukk.dev) **Vibe Coded** metodolojisi ve y
 ## Araç Setim & Donanım
 - **Diller:** Python, HTML
 - **Frameworkler:** PyTorch, Ollama
-- **Sistem:** Linux (Ubuntu 22.04), Ollama
+- **Sistem:** Linux (Arch), Ollama
 
 ---
 *8. sınıfın ders disiplini ile yapay zekaya duyulan teknik tutkunun bir araya gelmiş hali.*
